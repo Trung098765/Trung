@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.container{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.collum{
+    display: grid;
+    grid-template-columns:repeat(4),auto;
+    padding:20px;
+}
+
+.cl{
+    color:white;
+}
+
+@media only screen and (min-width: 992px) {
+    .collum{
+        display: grid;
+        grid-template-columns:repeat(4),auto;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+    .collum{
+        display: grid;
+        grid-template-columns:repeat(2),auto;
+    }
+}
+
+
+    
+
+
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="collum">
+            <p class="cl">Item 1</p>
+            <p class="cl">Item 2</p>
+            <p class="cl">Item 3</p>
+            <p class="cl">Item 4</p>
+        </div>
+    </div>
+
+</body>
+</html>
